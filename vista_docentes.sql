@@ -1,8 +1,6 @@
 -- Vista_Docentes
 SELECT
     c.Cod_Persona,
-    -- Nombre completo
-    UPPER(CONCAT(p.Apellido1, ' ', p.Apellido2, ' ', p.Nombre1)) AS Academico,
     (CASE 
         WHEN d.DeptoVigente IS NULL 
             THEN 'PART-TIME'
